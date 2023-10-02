@@ -10,7 +10,7 @@ const name2=prompt("Enter your name to join");
 socket.emit('new-user-joined', name2)
 
 // Audio that will play on recieving messages
-// var audio=new Audio('../Audio_files/ting.mp3')
+var audio=new Audio('../Audio_files/ting.mp3')
 
 // Function which will append to the container (chat section)
 const append= (message, position)=>{
@@ -19,17 +19,15 @@ const append= (message, position)=>{
     messageElement.classList.add('message');
     messageElement.classList.add(position);
     messageContainer.append(messageElement);
-    // if(position=='left'){
-    //     audio.play();
-    // }
+    if(position=='left'){
+        audio.play();
+    }
 }
 
 
 // If the new user joins receive the event from the server
 socket.on('user-joined',name=>{
-    console.log("before user joined");
-    append(`${name} joined the chat`, 'right')
-    console.log("after user joined");
+    append(`${name} joined the chat`, 'center')
 })
 
 // // If server sends a message then recieve it
@@ -39,7 +37,7 @@ socket.on('receive',data=>{
 
 // // If someone leaves the chat then let the other people know.
 socket.on('left',name=>{
-    append(`${name} left the chat`,'right')
+    append(`${name} left the chat`,'center')
 })
 
 

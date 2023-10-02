@@ -10,7 +10,6 @@ io.on('connection', socket=>{
     
     // if any new user joins then the other users will know
     socket.on('new-user-joined',name2=>{
-        console.log("new user", name2);
         users[socket.id]=name2;  
         socket.broadcast.emit('user-joined',name2);
     });

@@ -11,9 +11,7 @@ body{
 }
 nav h1{
     margin: auto;
-    /* border: 2px solid black; */
     width: fit-content;
-    /* color: white; */
 }
 .container{
     width: 50%;
@@ -43,6 +41,11 @@ nav h1{
 
 .right{
     float:right;
+    clear: both;
+}
+
+.center{
+    margin: auto;
     clear: both;
 }
 
