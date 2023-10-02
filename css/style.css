@@ -1,17 +1,23 @@
+body{
+    height: 97.8vh;
+    background-image: linear-gradient(rgb(126, 132, 247),rgb(255, 120, 253));
+    background-repeat: no-repeat;
+}
 .logo{
     display: block;
     margin: auto;
     width: 50px;
     height: 50px;
 }
-body{
-    height: 97.8vh;
-    background-image: linear-gradient(rgb(44, 33, 199),rgb(255, 0, 251));
-    background-repeat: no-repeat;
+nav h1{
+    margin: auto;
+    /* border: 2px solid black; */
+    width: fit-content;
+    /* color: white; */
 }
 .container{
     width: 50%;
-    background-color: red;
+    border: 5px solid black;
     margin: auto;
     height: 60vh;
     border-radius: 7px;
@@ -21,7 +27,7 @@ body{
 }
 
 .message{
-    background-color: grey;
+    background-color: rgb(181, 255, 181);
     width: 24%;
     padding: 10px;
     margin: 17px 12px;
@@ -36,7 +42,7 @@ body{
 }
 
 .right{
-    float: right;
+    float:right;
     clear: both;
 }
 
@@ -50,18 +56,26 @@ body{
 #send-container{
     text-align: center;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #messageInp{
     width: 85%;
+    font-size: 16px;
     border: 2px solid black;
     height: 34px;
     border-radius: 7px;
+    margin-right: 10px;
 }
 
 .btn{
     cursor: pointer;
     border: 2px solid black;
+    font-size: 16px;
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
     border-radius: 7px;
     height: 34px;
 }

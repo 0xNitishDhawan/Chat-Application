@@ -1,1 +1,5 @@
 node_modules/
+/nodeServer/package-lock.json
+/nodeServer/package.json
+package.json
+package-lock.json
