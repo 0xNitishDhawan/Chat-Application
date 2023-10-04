@@ -1,7 +1,9 @@
 body{
     height: 97.8vh;
-    background-image: linear-gradient(rgb(126, 132, 247),rgb(255, 120, 253));
-    background-repeat: no-repeat;
+    /* background-image: linear-gradient(rgb(126, 132, 247),rgb(255, 120, 253)); */
+    background-image: url('../images/chat-bg.jpg');
+    
+    /* background-repeat: no-repeat; */
 }
 .logo{
     display: block;
@@ -12,16 +14,20 @@ body{
 nav h1{
     margin: auto;
     width: fit-content;
+    font-size: 40px;
+    font-weight: bold;
 }
 .container{
     width: 50%;
-    border: 5px solid black;
     margin: auto;
     height: 60vh;
     border-radius: 7px;
     padding: 33px;
-    overflow-y: auto;
+    overflow-y: scroll;
     margin-bottom: 13px;
+    background-color: white;
+    opacity: 0.8;
+    border: 5px solid black;
 }
 
 .message{
